@@ -1,5 +1,23 @@
 def call(Map config) {
-    node {
-        echo "hello ${config.name}"
+    def myVar = 'test'
+    pipeline {
+       agent {
+         label "linux"
+       }
+
+       options {
+          buildDiscarder(logRotator(numToKeepStr: "5"))
+          timeout(time: 15, unit: 'MINUTES')
+       }
+        
+       stages{
+         stage('Stage A'){
+            steps{
+                script{
+                    deleteDir()
+                }
+            }
+         }
+       }
     }
 }
