@@ -1,6 +1,6 @@
 def myName = 'Test'
 
-def buildAppA{
+def buildAppA(){
   //pipeline {
   //  agent {
   //      label "${jenkinsAgent}"
