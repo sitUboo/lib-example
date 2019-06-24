@@ -1,8 +1,7 @@
 def call(Map config) {
-    def myVar = 'test'
     pipeline {
        agent {
-         label "linux"
+         label "${config.agent}"
        }
 
        options {
