@@ -8,11 +8,9 @@ package com.adp.steps
 //    artifacts.deploy("Dev")
 //}
 
-//class TestProcess {
-   static def call() {
-      echo ("This is how methods work in groovy");
-      echo ("This is an example of a simple method");
-   } 
-//}
+ static def call() {
+    echo "This is how methods work in groovy";
+    echo "This is an example of a simple method";
+ } 
 
 return this
