@@ -10,8 +10,8 @@ package com.adp.steps
 
 //class TestProcess {
    static def call() {
-      println("This is how methods work in groovy");
-      println("This is an example of a simple method");
+      echo ("This is how methods work in groovy");
+      echo ("This is an example of a simple method");
    } 
 //}
 
