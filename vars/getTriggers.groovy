@@ -1,4 +1,4 @@
 def call(trigger_cause) {
-   env.lunch = candy
+   env.lunch = "candy"
    return env //ourCount
 }
