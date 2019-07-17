@@ -2,7 +2,6 @@ def call(trigger_cause) {
    trigger_cause.each {
       echo "Trigger event: $it.event.event"
       myEvent = "$it.event.event"
-      echo myEvent.split(":")
       bits = myEvent.split(":")
       //str = it.event.event
       //x = str.split(",")
