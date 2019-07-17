@@ -4,5 +4,5 @@ def call() {
    echo "Event Key: ${trigger_cause[0].event}"
    echo "We had a total of ${trigger_cause.size()}"
    //return trigger_cause.size()
-   return 2
+   return "2"
 }
