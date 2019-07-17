@@ -3,5 +3,5 @@ def call(trigger_cause) {
       echo "Trigger event: $it.event.event"
    }
    //env.lunch = "brussels sprouts"
-   env.lunch = "candy"
+   env["lunch"] = "candy"
 }
