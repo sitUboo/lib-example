@@ -1,8 +1,6 @@
 def call(Map config) {
     pipeline {
-       agent {
-         label any
-       }
+       agent any
 
        options {
           buildDiscarder(logRotator(numToKeepStr: "5"))
