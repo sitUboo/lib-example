@@ -1,7 +1,7 @@
 def call(Map config) {
     pipeline {
        agent {
-         label "${config.agent}"
+         label any
        }
 
        options {
@@ -13,6 +13,9 @@ def call(Map config) {
          stage('Stage A'){
             steps{
                 script{
+                    config.each { key, val ->
+                        println "my Key: $key Value: $val"
+                    }
                     deleteDir()
                 }
             }
