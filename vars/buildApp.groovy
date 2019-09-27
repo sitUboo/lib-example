@@ -14,6 +14,9 @@ def call(Map config) {
                     config.each { key, val ->
                         println "my Key: $key Value: $val"
                     }
+                    env.each { key, val ->
+                        println "Env Key: $key Value: $val"
+                    }
                     deleteDir()
                 }
             }
