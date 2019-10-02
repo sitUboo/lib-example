@@ -14,7 +14,7 @@ def call(Map config) {
                     git 'git@github.com:sitUboo/choices.git'
                     def foundFiles = findFiles(glob: '*.txt')
                     for (int i = 0; i < foundFiles.size(); i++) {
-                        echo i
+                        echo foundFiles[i]
                     }
                     //deleteDir()
                 }
