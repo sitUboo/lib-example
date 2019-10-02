@@ -12,7 +12,7 @@ def call(Map config) {
             steps{
                 script{
                     git 'git@github.com:sitUboo/choices.git'
-                    def foundFiles = findFiles(glob: 'choices/*')
+                    def foundFiles = findFiles(glob: '*.txt')
                     for (int i = 0; i < foundFiles.size(); i++) {
                         echo i
                     }
