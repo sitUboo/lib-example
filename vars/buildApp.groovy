@@ -16,7 +16,7 @@ def call(Map config) {
                     for (int i = 0; i < foundFiles.size(); i++) {
                         echo i
                     }
-                    deleteDir()
+                    //deleteDir()
                 }
             }
          }
