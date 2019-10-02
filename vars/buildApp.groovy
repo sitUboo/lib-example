@@ -11,9 +11,7 @@ def call(Map config) {
          stage('Stage A'){
             steps{
                 script{
-                    config.each { key, val ->
-                        println "my Key: $key Value: $val"
-                    }
+                    git 'git@github.com:sitUboo/choices.git'
                     deleteDir()
                 }
             }
