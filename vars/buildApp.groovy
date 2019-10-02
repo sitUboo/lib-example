@@ -12,6 +12,10 @@ def call(Map config) {
             steps{
                 script{
                     git 'git@github.com:sitUboo/choices.git'
+                    def foundFiles = findFiles(glob: 'choices/*')
+                    for (int i = 0; i < foundFiles.size(); i++) {
+                        echo i
+                    }
                     deleteDir()
                 }
             }
