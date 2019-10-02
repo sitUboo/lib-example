@@ -14,7 +14,7 @@ def call(Map config) {
                     git 'git@github.com:sitUboo/choices.git'
                     def foundFiles = findFiles(glob: '*.txt')
                     env.FILE_TO_TEST = input message: 'User input required', ok: 'Input File',
-                            parameters: [choice(name: 'FILE_TO_TEST', choices: foundFiles, description: 'What file to use?')]
+                            parameters: [choice(name: 'FILE_TO_TEST', choices: foundFiles.join("\n"), description: 'What file to use?')]
                     echo "${env.FILE_TO_TEST}"
                     //deleteDir()
                 }
