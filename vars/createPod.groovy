@@ -9,5 +9,5 @@ spec:
     command: ['cat']
     tty: true
 """
-    return a
+    echo a
 }
