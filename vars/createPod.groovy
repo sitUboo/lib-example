@@ -1,5 +1,5 @@
 def call() {
-    stYaml = """
+    def a = """
 apiVersion: v1
 kind: Pod
 spec:
@@ -9,5 +9,5 @@ spec:
     command: ['cat']
     tty: true
 """
-    return stYaml
+    return a
 }
