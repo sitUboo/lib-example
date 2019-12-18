@@ -1,6 +1,5 @@
 def call() {
-    kubernetes {
-      yaml """
+    return yaml """
 apiVersion: v1
 kind: Pod
 spec:
@@ -10,5 +9,4 @@ spec:
     command: ['cat']
     tty: true
 """
-    }
 }
