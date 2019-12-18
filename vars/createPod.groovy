@@ -1,5 +1,5 @@
 def call() {
-    def stYaml = yaml """
+    stYaml = """
 apiVersion: v1
 kind: Pod
 spec:
